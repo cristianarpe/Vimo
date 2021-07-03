@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\tb_peliculas;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class TbPeliculasController extends Controller
 {
