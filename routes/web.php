@@ -1,6 +1,10 @@
 <?php
 
+use App\Http\Controllers\InicioUserController;
+use App\Http\Controllers\SeriesUserController;
+use App\Http\Controllers\PeliculasUserController;
 use Illuminate\Support\Facades\Route;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +20,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::resource('iniciouser', InicioUserController::class);
+Route::resource('seriesuser',SeriesUserController::class);
+Route::resource('peliculasuser', PeliculasUserController::class);
+
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
