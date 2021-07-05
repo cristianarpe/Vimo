@@ -1,9 +1,6 @@
 @extends('layouts.app')
 @section('content')
 {{-- Vista de usuario --}}
-
-
-   
     
     <div id="SliderVimo" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
