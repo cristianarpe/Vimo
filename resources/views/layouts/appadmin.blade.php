@@ -81,7 +81,7 @@
                 </div>
             </div>
         </nav> --}}
-        <div class="d-flex">
+    <div class="d-flex">
        <div id="sidebar-container" class="bg-primary">   
             <div class="logo">
                 <img src="{{ asset('img/logo.png') }}" alt="VIMO-logo" id="texto_logo">
@@ -179,9 +179,9 @@
         <main class="py-6" id="contenido">{{-- original:py-4 --}}
             @yield('content')
         </main>
-        </div>
-        
+        </div>        
     </div>
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

@@ -1,7 +1,9 @@
 <?php
-
-use App\Http\Controllers\TbPeliculasController;
 use App\Http\Controllers\InicioUserController;
+use App\Http\Controllers\SeriesUserController;
+use App\Http\Controllers\PeliculasUserController;
+use App\Http\Controllers\TbPeliculasController;
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,7 +22,14 @@ Route::get('/', function () {
 });
 
 /* Auth::routes();*/
-Route::get('inicio/', [InicioUserController::class, 'index']);
+Route::resource('iniciouser', InicioUserController::class);
+Route::resource('seriesuser',SeriesUserController::class);
+Route::resource('peliculasuser', PeliculasUserController::class);
+
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('administrador/explorar', [TbPeliculasController::class, 'explorar']);  /*el parametro '/explorar es como aparece en el nav. el parametro 'explorar' es el metodo en el controller */
 Route::get('administrador/ayuda', [TbPeliculasController::class, 'ayuda']); 
