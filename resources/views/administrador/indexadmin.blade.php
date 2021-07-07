@@ -34,7 +34,8 @@
                     <th>Duracion</th>
                     <th>Fecha estreno</th>
                     <th>Calificacion</th>
-                    <th>Imagen</th>
+                    <th>Portada</th>
+                    <th>archivo</th>
                     <th colspan="2">Acciones</th>
                 </tr>
             </thead>
@@ -52,6 +53,7 @@
                     <td>
                         <img width="100" src="{{ asset('storage').'/'.$peli->ruta_imagen }}" alt="">
                     </td>
+                    <td>ruta archivo </td>
                     <td>
                         <a href="{{ url('administrador/'.$peli->id.'/edit') }}"class="btn btn-info"><i class="icon ion-md-create"></i></a>
                     </td>
