@@ -10,20 +10,9 @@
                     <p class="lead text-muted text-center">Como podemos ayudarte</p>
                 </div>
 
-               {{--  <div class="col-lg-3 d-flex">
-                    <form class="form-inline position-relative " action="peliculas.php" method="POST">
-                        <input class="w-100 align-self-center form-control" type="search" placeholder="Ingresa tu busqueda"
-                            aria-label="Buscar">
-                        <button class="btn btn-search position-absolute" type="submit"><i
-                                class="icon ion-md-search"></i></button>
-                    </form>
-                  </div> --}}
-
                   <div class="">
                     <h4 class="container display-4">Preguntas Frecuentes</h4>
                   </div>
-
-
             </div>
         </div>
         </section>  
