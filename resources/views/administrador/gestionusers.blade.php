@@ -27,11 +27,11 @@
                 <thead>
                     <tr>
                         <th>Id</th>
-                        <th>Nombre usuario </th>
-                        <th>Correo</th>
-                        <th>telefono</th>
+                        <th><i class="icon ion-md-person"></i> Nombre Usuario </th>
+                        <th><i class="icon ion-md-at"></i> Correo</th>
+                        <th><i class="icon ion-md-call"></i> Teléfono</th>
                         <th>Edad</th>
-                        <th>Estado</th>
+                        <th><i class="icon ion-md-wifi"></i> Estado</th>
                         <th>Intereses</th>
                         <th>Suscripcion</th>
                         <th colspan="2">Acciones</th>

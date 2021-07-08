@@ -50,20 +50,19 @@
 
                             <ul class="list-inline">
                                 <li class="list-inline-item"><a href="" class="btn btn-success"><i class="icon ion-md-eye"
-                                            id="botones_content"></i></a></li>
+                                            id="botones_content" style="font-size: 20px"></i></a></li>
                                 <li class="list-inline-item"><a href="{{ url('administrador/' . $peli->id . '/edit') }}"
-                                        class="btn btn-info"><i class="icon ion-md-create"></i></a></li>
+                                        class="btn btn-info"><i class="icon ion-md-create" style="font-size: 20px"></i></a></li>
                                 <li class="list-inline-item">
                                     <form action="{{ url('administrador/' . $peli->id) }}" method="POST">
                                         @csrf
                                         {{ method_field('DELETE') }}
                                         <button type="submit"
                                             onclick="return confirm('¿Está seguro de querer eliminar esta pelicula?')"
-                                            class="btn btn-danger"><i class="icon ion-md-trash"></i></button>
+                                            class="btn btn-danger"><i class="icon ion-md-trash" style="font-size: 20px"></i></button>
                                     </form>
                                 </li>
                             </ul>
-
 
 
                         </div>

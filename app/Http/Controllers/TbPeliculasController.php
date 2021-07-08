@@ -15,21 +15,25 @@ class TbPeliculasController extends Controller
      */
     public function index()
     {
+        $title_page="Bienvenido Administrador";
         $datos['administrador'] = tb_peliculas::paginate(5);
-        return view('administrador.indexadmin', $datos);
+        return view('administrador.indexadmin', $datos, compact('title_page'));
     }
 
     public function explorar(){
+        $title_page="Catalogo de peliculas";
         $datos['administrador'] = tb_peliculas::paginate(5);
-        return view('administrador.explorar', $datos);
+        return view('administrador.explorar', $datos,compact('title_page'));
     }
 
     public function ayuda(){
-       return view('administrador.ayuda');
+        $title_page="Ayuda";
+       return view('administrador.ayuda',compact('title_page'));
     }
 
     public function adminuser(){
-        return view('administrador.gestionusers');
+        $title_page="Gestion Usuarios";
+        return view('administrador.gestionusers',compact('title_page'));
     }
 
     /**
@@ -39,7 +43,8 @@ class TbPeliculasController extends Controller
      */
     public function create()
     {
-        return view('administrador.crear');
+        $title_page="Sube Una Pelicula";
+        return view('administrador.crear',compact('title_page'));
     }
 
     /**
@@ -96,8 +101,9 @@ class TbPeliculasController extends Controller
      */
     public function edit($id)
     {
+        $title_page="Edite Un registro";
         $data_peli = tb_peliculas::findOrFail($id);
-        return view('administrador.editar', compact('data_peli'));
+        return view('administrador.editar', compact('data_peli','title_page'));
     }
 
     /**
