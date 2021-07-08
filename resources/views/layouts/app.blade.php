@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title> 
+    <title>{{ config('app.name', 'Vimo') }}</title> 
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -17,6 +17,7 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
+    <link rel="shortcut icon" type="image/png" href="{{ asset('favicon.ico') }}">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/3446b5d1bc.js" crossorigin="anonymous"></script>
     <link href="{{ asset('css/vimo.css')}}" rel="stylesheet">

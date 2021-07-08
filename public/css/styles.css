@@ -40,7 +40,7 @@ body{
     max-width: 100%;
 }
 .logo{
-    width: 80%;    
+    width: 100%;    
 }
 #text_oculto{
     color: var(--letra_oculta);
