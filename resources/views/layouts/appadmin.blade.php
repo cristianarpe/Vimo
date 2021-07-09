@@ -101,7 +101,7 @@
                         </li>
                         <li> <a href="{{ url('administrador/gestionusers') }}"
                                 class="d-block text-light p-3 list-group-item"><i class="icon ion-md-person mr-3 lead"
-                                    id="botones_content"></i>Gestion Usuarios</a> </li>
+                                    id="botones_content"></i>Gestión Usuarios</a> </li>
 
                         <li> <a href="{{ url('administrador/create') }}"
                                 class="d-block text-light p-3 list-group-item"><i class="icon ion-md-folder mr-3 lead"
@@ -147,7 +147,7 @@
                                     <a class="nav-link ml-sm-5 mr-sm-2 disabled" id="text_oculto" href="#">Recientes</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link ml-sm-5 mr-sm-2" id="text_nav" href="#">Peliculas</a>
+                                    <a class="nav-link ml-sm-5 mr-sm-2 disabled" id="text_oculto" href="#">Peliculas</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link ml-sm-5 mr-sm-3" id="text_nav" href="#">Lista</a>
