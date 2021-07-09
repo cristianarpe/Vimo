@@ -32,7 +32,7 @@
     <div id="app">
         <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
             <div class="container">
-                <a class="navbar-brand active letrav" style="color:#ffff" href="index.html"><img src="img/Logo_Vimo.JPG"
+                <a class="navbar-brand active letrav" style="color:#ffff" href="index.html"><img src="img/logo.png"
                         width="120" height="80" alt="Logo Vimo">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
