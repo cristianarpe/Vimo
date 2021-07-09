@@ -45,7 +45,7 @@
                 <img class="card-img-top img-fluid" src="{{ asset('img/logofondo.JPG') }}" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title"><i class="icon ion-md-analytics"></i> Estamos en crecimiento</h5>
-                  <p class="card-text"><i class="icon ion-md-cafe"></i> Vimo Peliculas es un servico en desarrollo, por lo cual algunas funciones se encuentran en constante mejora. </p>
+                  <p class="card-text"><i class="icon ion-md-cafe"></i> Vimo Peliculas es un servicio en desarrollo, por lo cual algunas funciones se encuentran en constante mejora. </p>
                 </div>
                 <div class="card-footer">
                   <small class="text-muted">Continuamos en Desarrollo...</small>
