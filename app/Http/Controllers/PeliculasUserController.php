@@ -14,7 +14,8 @@ class PeliculasUserController extends Controller
      */
     public function index()
     {
-        return view('inicio.peliculas');
+        $title_page="Peliculas Disponibles";
+        return view('inicio.peliculas', compact('title_page'));
     }
 
     /**

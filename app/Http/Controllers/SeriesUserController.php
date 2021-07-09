@@ -14,7 +14,8 @@ class SeriesUserController extends Controller
      */
     public function index()
     {
-        return view('inicio.series');
+        $title_page="Series Disponibles";
+        return view('inicio.series', compact('title_page'));
 
     }/**
      * Show the form for creating a new resource.

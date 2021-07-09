@@ -14,7 +14,8 @@ class InicioUserController extends Controller
      */
     public function index()
     {
-        return view('inicio.iniciousuario');
+        $title_page="Bienvenido!";
+        return view('inicio.iniciousuario', compact('title_page'));
     }
 
     /**
