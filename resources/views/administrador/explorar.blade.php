@@ -6,8 +6,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-10">
-                    <h1 class="mb-8 text-center" id="titulo_body">Explore el Catalogo de Peliculas Disponible</h1>
-                    <p class="lead text-muted">Desde esta vista puede hacer Cambios:</p>
+                    <h1 class="mb-8 text-center" id="titulo_body">Explore el Catálogo de Peliculas Disponibles</h1>
+                    <p class="lead text-muted">Desde esta vista puede hacer cambios:</p>
                 </div>
 
                 <div class="col-lg-2 d-flex">

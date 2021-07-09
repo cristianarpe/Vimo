@@ -7,7 +7,7 @@
                 <div class="row">
                     <div class="col-lg-9">
                         <h1 class="mb-8 display-1 text-center" id="titulo_body">Bienvenido Administrador</h1>
-                        <p class="lead text-muted">Aqui Puede gestionar el contenido de la base de datos directamente:</p>
+                        <p class="lead text-muted">Aqui puede gestionar el contenido de la base de datos directamente:</p>
                     </div>
 
                     <div class="col-lg-3 d-flex">

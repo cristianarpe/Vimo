@@ -21,7 +21,7 @@ class TbPeliculasController extends Controller
     }
 
     public function explorar(){
-        $title_page="Catalogo de peliculas";
+        $title_page="Catálogo de Peliculas";
         $datos['administrador'] = tb_peliculas::paginate(5);
         return view('administrador.explorar', $datos,compact('title_page'));
     }
@@ -32,7 +32,7 @@ class TbPeliculasController extends Controller
     }
 
     public function adminuser(){
-        $title_page="Gestion Usuarios";
+        $title_page="Gestión Usuarios";
         return view('administrador.gestionusers',compact('title_page'));
     }
 
