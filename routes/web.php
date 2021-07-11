@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome'); /* esto me lleva a welcome.blade.php */
+    return view('auth.login'); /* esto me lleva a welcome.blade.php */
 });
 
 /* Auth::routes();*/
