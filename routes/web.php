@@ -18,14 +18,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('auth.login'); /* esto me lleva a welcome.blade.php */
+    $title_page="Bienvenido, aca va el nombre de la pagina";
+    return view('welcome', compact('title_page')); /* esto me lleva a welcome.blade.php */
 });
 
 /* Auth::routes();*/
+Route::get('homeseries', [App\Http\Controllers\HomeController::class, 'homeseries']);
+Route::get('homepeliculas', [App\Http\Controllers\HomeController::class, 'homepeliculas']);
+
 Route::resource('iniciouser', InicioUserController::class);
 Route::resource('seriesuser',SeriesUserController::class);
 Route::resource('peliculasuser', PeliculasUserController::class);
-
 
 Auth::routes();
 
@@ -38,7 +41,3 @@ Route::get('administrador/gestionusers', [TbPeliculasController::class, 'adminus
 Route::resource('administrador', TbPeliculasController::class); /* ->middleware('auth') es para pasar con autenticacion */
 Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-
-
-

@@ -23,6 +23,15 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $title_page="Inicio";
+        return view('home', compact('title_page'));
+    }
+    public function homeseries(){
+        $title_page="Series";
+        return view('home.homeseries', compact('title_page'));
+    }
+    public function homepeliculas(){
+        $title_page="peliculas";
+        return view('home.homepeliculas', compact('title_page'));
     }
 }
