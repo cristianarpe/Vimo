@@ -23,8 +23,6 @@ Route::get('/', function () {
 });
 
 /* Auth::routes();*/
-Route::get('homeseries', [App\Http\Controllers\HomeController::class, 'homeseries']);
-Route::get('homepeliculas', [App\Http\Controllers\HomeController::class, 'homepeliculas']);
 
 Route::resource('iniciouser', InicioUserController::class);
 Route::resource('seriesuser',SeriesUserController::class);

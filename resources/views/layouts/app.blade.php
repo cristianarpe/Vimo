@@ -17,14 +17,17 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+
 
     <!-- Styles -->
+    
     <link rel="shortcut icon" type="image/png" href="{{ asset('favicon.ico') }}">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <script src="https://kit.fontawesome.com/3446b5d1bc.js" crossorigin="anonymous"></script>
     <link href="{{ asset('css/vimo.css') }}" rel="stylesheet">
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
-
+    <link href="{{ asset('css/estilos.css') }}" rel="stylesheet">
 
 </head>
 
@@ -32,34 +35,36 @@
     <div id="app">
         <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
             <div class="container">
-                <a class="navbar-brand active letrav" style="color:#ffff" href="{{ url('iniciouser') }}"><img src="img/logo.png"
-                        width="120" height="80" alt="Logo Vimo">
+                <a class="navbar-brand active letrav" style="color:#ffff" href="{{ url('iniciouser') }}"><img
+                        src="img/logo.gif" width="120" height="80" alt="Logo Vimo">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="ml-5">
-                    <input type="text" placeholder="Buscar" size="50" class="ml-5">
-                    <i class="fas fa-search" style="font-size: 15px; color:#ffff ;"></i>
-                </div>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item ">
-                            <a class="nav-link letrav" style="color:#ffff" href="{{ url('iniciouser') }}">INICIO</a>
-                        </li>
-                        <li class="nav-item letrav">
-                            <a class="nav-link " style="color:#ffff" href="{{ url('seriesuser') }}">SERIES</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link letrav" style="color:#ffff"
-                                href="{{ url('peliculasuser') }}">PELICULAS</a>
-                        </li>
-                        <li class="nav-item mr-1 dropdown">                           
-                                <a class="nav-link dropdown-toggle" href="#" id="text_nav" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  style="font-size: 20px; color:#ffff ;">
+                    @if (!Auth::guest()){{-- si esta registrado muestre esto --}}
+                       <div class="ml-5">
+                            <input type="text" placeholder="Buscar" size="50" class="ml-5">
+                            <i class="fas fa-search" style="font-size: 15px; color:#ffff ;"></i>
+                        </div>
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item ">
+                                    <a class="nav-link letrav" style="color:#ffff" href="{{ url('iniciouser') }}">INICIO</a>
+                                </li>
+                                <li class="nav-item letrav">
+                                    <a class="nav-link " style="color:#ffff" href="{{ url('seriesuser') }}">SERIES</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link letrav" style="color:#ffff"
+                                        href="{{ url('peliculasuser') }}">PELICULAS</a>
+                                </li>
+                        <li class="nav-item mr-1 dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="text_nav" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                style="font-size: 20px; color:#ffff ;">
                                 <i class="fas fa-user fa-sx mt-1 ml-2 mr-2"></i>
-                            </a>                                
+                            </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="#" id="botones_dash">Configurar</a>
                                 <a class="dropdown-item" href="#"><i class="icon ion-md-options" id="botones_dash"></i>
@@ -69,7 +74,20 @@
                                         id="botones_dash"></i>Cerrar
                                     Sesión</a>
                             </div>
-                        </li>     
+                        </li> 
+                        @else{{-- no esta registrado entonces... --}}
+                        
+                        <div class="collapse navbar-collapse justify-content-end">
+                            <li class="nav-item mr-2">
+                                <a class="nav-link letrav btn btn-link" style="color:#ffff"
+                                    href="#">Español</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link letrav btn btn-danger" style="color:#ffff"
+                                href="{{ url('login') }}">Inicia Sesion</a>
+                        </li>
+                        </div>
+                        @endif                        
                     </ul>
                 </div>
             </div>
@@ -79,5 +97,8 @@
         </main>
     </div>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+	<script src={{ asset('js/main.js') }}></script>
 </body>
+
 </html>

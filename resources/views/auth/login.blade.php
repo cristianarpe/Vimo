@@ -1,6 +1,7 @@
-@extends('layouts.apphome')
+@extends('layouts.app')
 
 @section('content')
+<?php $title_page = "Registrese"; ?>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
