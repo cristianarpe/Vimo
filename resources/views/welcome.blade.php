@@ -7,7 +7,7 @@
             <h3 class="titulo">Mucho más que peliculas</h3>
             <p class="descripcion">
                 Descubre las mejores historias,  todo en un mismo lugar. Desde nuevos lanzamientos y Originales hasta clásicos inolvidables. Un lugar con entretenimiento para todos.</p>
-            <button role="button" class="boton"><i class="fas fa-play"></i>Suscribete ahora</button>
+            <button role="button" class="boton"><a href="{{ url('register') }}"><i class="fas fa-play"></i>Suscribete ahora</button>
         </div>
     </div>
     <div class="peliculas-recomendadas contenedor">
