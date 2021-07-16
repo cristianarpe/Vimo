@@ -35,7 +35,7 @@
     <div id="app">
         <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
             <div class="container">
-                <a class="navbar-brand active letrav" style="color:#ffff" href="{{ url('iniciouser') }}"><img
+                <a class="navbar-brand active letrav" style="color:#ffff" href="{{ url('/') }}"><img
                         src="img/logo.gif" width="120" height="80" alt="Logo Vimo">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
